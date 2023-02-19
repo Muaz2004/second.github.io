@@ -1,0 +1,262 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    background-color: white;
+}
+
+main {
+    
+    min-height: 70vh;
+    width: 68%;
+    margin: 10em auto;
+
+}
+
+section {
+    
+    padding: 2.5em 2.5em 0 2.5em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.writing {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.header {
+    font-family: 'Big Shoulders Display';
+    color: white;
+    font-weight: 700;
+    font-size: 1.9em;
+    padding-bottom: 1em;
+}
+
+.discription {
+    font-family: 'Lexend Deca';
+    color: rgb(231, 229, 229);
+    font-weight: 300;
+    line-height: 1.5em;
+    font-size: .9em;
+}
+
+
+button {
+    padding: 13px 32px;
+    border-radius: 3em;
+    border: none;
+    font-family: 'Lexend Deca';
+    font-weight: medium;
+    margin-top: 1em;
+}
+
+.sedans button {
+    color: hsl(31, 77%, 52%);
+}
+
+.sedans button:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+    border: 2.5px solid white;
+    transition: background-color .3s;
+}
+
+.suvs button {
+    color: hsl(184, 100%, 22%);
+}
+
+.suvs button:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+    border: 2.5px solid white;
+    transition: background-color .3s;
+}
+
+
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury button:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+    border: 2.5px solid white;
+    transition: background-color.3s;
+}
+
+.sedans {
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+   
+}
+
+.luxury {
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+@media(min-width: 1000px) {
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sedans {
+        border-bottom-left-radius: 1em;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 0;
+       
+    }
+
+    .luxury {
+        border-bottom-right-radius: 1em;
+        border-top-right-radius: 1em;
+        border-bottom-left-radius: 0;
+    }
+}
